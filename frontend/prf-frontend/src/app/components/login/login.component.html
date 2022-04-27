@@ -1,0 +1,13 @@
+<div class="content" role="main">
+    <main id="main-holder">
+        <h1 id="login-header">Italnagykereskedés</h1>
+
+        <div id="login-form">
+            <input type="text" name="username" [(ngModel)] = "username" id="username-field" class="login-form-field" placeholder="Felhasználónév">
+            <input type="password" name="password" [(ngModel)] = "password" id="password-field" class="login-form-field" placeholder="Jelszó">
+            <input type="button" value="Bejelentkezés" id="login-form-submit" (click)="login()">
+        </div>
+
+        <a routerLink="/regist" style="color: blue;">Még nincs profilod?</a>
+    </main>
+</div>

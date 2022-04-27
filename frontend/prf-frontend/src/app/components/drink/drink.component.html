@@ -1,0 +1,24 @@
+<app-toolbar></app-toolbar>
+
+<div class="content" role="main" *ngFor="let drink of drinks">
+  <div>
+    <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title>{{drink.title}}</mat-card-title>
+      </mat-card-header>
+      <img mat-card-image [src]="drink.imageUrl" [alt]="drink.name">
+      <mat-card-content>
+        <p>
+          {{drink.description}}
+        </p>
+        <p>
+          Ára: <span>{{drink.price}}</span> Ft
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <input #drinkAmount type="number" [id]="drink.name" value="1">
+        <button mat-button [id]="drink.name" #drinkButton (click)="addToBasket(drinkButton.id, drinkAmount.value)" >Hozzáad</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

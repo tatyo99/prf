@@ -1,0 +1,16 @@
+<div class="content" role="main">
+    <main id="main-holder">
+        <h1 id="login-header">Italnagykereskedés</h1>
+
+        <div id="login-form">
+            <input type="text" name="username" [(ngModel)] = "username" id="username-field" class="login-form-field" placeholder="Felhasználónév">
+            <input type="password" name="password" [(ngModel)] = "password" id="password-field" class="login-form-field" placeholder="Jelszó">
+            <input type="email" name="email" [(ngModel)] = "email" id="email-field" class="login-form-field" placeholder="minta@minta.com">
+            <input type="text" name="address" [(ngModel)] = "address" id="address-field" class="login-form-field" placeholder="Lakcím">
+            <input type="text" name="mobile" [(ngModel)] = "mobile" id="mobile-field" class="login-form-field" placeholder="Telefonszám">
+            <input type="button" value="Regisztrálás" id="login-form-submit" (click)="regist()">
+        </div>
+
+        <a routerLink="/login" style="color: blue;">Mégis van profilom!</a>
+    </main>
+</div>

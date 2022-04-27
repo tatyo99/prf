@@ -1,0 +1,40 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+frontend/prf-frontend/deploy
+backend/node_modules/
+backend/.git/
+backend/.gitignore
+frontend/prf-frontend/.git/
+frontend/prf-frontend/.gitignore
+
+# Compiled output
+frontend/prf-frontend/dist
+frontend/prf-frontend/dist/tmp
+frontend/prf-frontend/dist/out-tsc
+frontend/prf-frontend/dist/bazel-out
+
+# Node
+frontend/prf-frontend/dist/node_modules
+frontend/prf-frontend/distnpm-debug.log
+frontend/prf-frontend/distyarn-error.log
+
+# IDEs and editors
+frontend/prf-frontend/dist/.idea/
+frontend/prf-frontend/dist/.project
+frontend/prf-frontend/dist/.classpath
+frontend/prf-frontend/dist/.c9/
+frontend/prf-frontend/dist/*.launch
+frontend/prf-frontend/dist/.settings/
+frontend/prf-frontend/dist/*.sublime-workspace
+
+# Miscellaneous
+frontend/prf-frontend/dist/.angular/cache
+frontend/prf-frontend/dist/.sass-cache/
+frontend/prf-frontend/dist/connect.lock
+frontend/prf-frontend/dist/coverage
+frontend/prf-frontend/dist/libpeerconnection.log
+frontend/prf-frontend/disttestem.log
+frontend/prf-frontend/dist/typings
+
+# System files
+frontend/prf-frontend/dist/Thumbs.db
